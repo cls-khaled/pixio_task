@@ -7,103 +7,77 @@
 *   6. miscellanous
 */
 @import url("./utility.css");
-/* ########## Header section ##########*/
-.header{
-    height: var(--header-height);
-    width: 100%;
-    min-width: var(--screen-min-width);
-    border-bottom: var(--stroke);
-    /* background-color: #54fd12; */
-}
-.nav-bar{
-    width: var(--boxed-width);
-    height: 100%;
-    margin: 0px auto;
-    /* background-color: rgb(67, 175, 189); */
-}
-/* ####################*/
 
-/* ########## Nav structure ##########*/
+/* Header  */
+header{
+    width: 100% ;
+    min-width: 1300px;
+    height: var(--height-header);
+    border-bottom: var(--border-main-stroke);
+}
+/* ------------ */
+
+/* Header > Nav */
+nav {
+    width: var(--width-boxed-screen);
+    height: var(--height-header);
+    margin: auto;
+}
 .nav-left-side{
-    height: 100%;
     float: left;
+}
+.nav-left-side > div{
     display: inline;
-    /* background-color: saddlebrown; */
+    height: var(--height-header);
+    line-height: var(--height-header);
 }
-.nav-right-side{
-    height: 100%;
-    float: right;
-    /* background-color: blueviolet; */
-}
-/* ####################*/
-
-/* ########## Nav left side ##########*/
 .site-logo{
-    width: 142px;
-    height: 45px;
-    vertical-align: middle;
-}
-.nav-menu{
-    height: 100%;
-    margin-left: 80px;
-    line-height: var(--header-height);
     display: inline-block;
     vertical-align: middle;
-    /* background-color: rgb(154, 156, 20); */
+} 
+.nav-links{
+    margin-left: 70px;
 }
-.nav-menu li{
-    height: 100%;
-    padding: 0px 18px;
-    display: inline;
-    font-size: 1.5em; /* 24px */
-    /* background-color: red; */
+.nav-links > div{
+    display: inline-block;
+    padding: 0px 5px;
 }
-.nav-menu li img {
+.nav-links > div > a {
+    font-size: 1em;
+    color: var(--color-primary-text) ; 
+}
+.nav-links > div > img {
     width: 12px;
     height: 12px;
 }
-/* ####################*/
+.nav-right-side{
+    height: var(--height-header);
+    float: right;
+    line-height: var(--height-header);
+}
+.nav-right-side > img{
+    margin: auto 5px;
+    vertical-align: middle;
+}
+/* ------------ */
 
-/* ########## Nav right side ##########*/
-.nav-register{
-   margin-right: 48px;
-   line-height: var(--header-height);
-   font-size: 1em; /* 16px */
-   border-bottom: var(--stroke);
+/* Main */
+main{
+    width: 100%;
 }
-.nav-right-icons{
-    display: inline-block;
-}
-.nav-right-icons img{
-    width: 20px;
-    height: 20px;
-}
+/* ------------ */
 
-.nav-right-icons li{
-    padding: 0px 15px;
-    display: inline-block;
-}
-.nav-right-icons li:last-child{
-    margin-left: 25px;
-}
-/* ####################*/
-
-/* ########## collections section ##########*/
+/* Main > collection section */
 .collections{
-    height: 850px;
-    min-width: var(--screen-min-width);
-    border-bottom: var(--stroke);
-    /* background-color: rgba(255, 250, 243, 1);  */
-    background-color: rgba(255, 250, 0, 1);
-    /* solution with flex */
-    display: flex;
-    justify-content: center;
+    height: 865px;
+    background-color:rgba(255, 250, 243, 1);
 }
-.collections p{
-    font-size: 5em;
-    background-color: red;
-    /* solution with flex */
-    margin: auto;
+/* ------------ */
+
+/* Footer */
+footer{
+    background-color: aqua;
 }
-/* ####################*/
+/* ------------ */
+
 

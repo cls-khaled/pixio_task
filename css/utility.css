@@ -1,3 +1,11 @@
+/* Ordring convention : 
+*   1. positioning
+*   2. box-model
+*   3. typography
+*   4. visual
+*   5. animation
+*   6. miscellanous
+*/
 *{
     margin: 0px;
     padding: 0px ;
@@ -5,9 +13,16 @@
 }
 
 :root{
-    --header-height: 81px;
-    --screen-min-width: 1920px;
-    --boxed-width: 90%;
-    --stroke : 1px solid  rgba(0, 0, 0, 0.1);
+    --height-header: 81px;
+    --width-boxed-screen: 90%;
+    --min-width-main: 1920px;
+
+    --border-main-stroke : 1px solid  rgba(0, 0, 0, 0.1);
+
+    --color-primary : red;
+    --color-secondry: red;
+    --color-primary-text:black;
+    --color-secondery-text:red;
+
 }
 
