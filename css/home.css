@@ -15,7 +15,7 @@ header{
     height: var(--height-header);
     border-bottom: var(--border-main-stroke);
 }
-/* ------------ */
+/* ---------- */
 
 /* Header > Nav */
 nav {
@@ -45,6 +45,8 @@ nav {
 .nav-links > div > a {
     font-size: 1em;
     color: var(--color-primary-text) ; 
+    user-select: none;
+    text-decoration: none;
 }
 .nav-links > div > img {
     width: 12px;
@@ -55,29 +57,42 @@ nav {
     float: right;
     line-height: var(--height-header);
 }
+.nav-right-side :first-child{
+    border-bottom: var(--border-main-stroke);
+}
 .nav-right-side > img{
     margin: auto 5px;
     vertical-align: middle;
 }
-/* ------------ */
+/* ---------- */
 
 /* Main */
 main{
     width: 100%;
 }
-/* ------------ */
+/* ---------- */
 
 /* Main > collection section */
 .collections{
-    height: 865px;
+    height: 858px;
     background-color:rgba(255, 250, 243, 1);
 }
-/* ------------ */
+/* ---------- */
+
+/* Main > featured categories*/
+.featured-categories{
+    height: 394px;
+    background-color: rgba(254, 235, 157, 1)
+}
+.featured-categories .white-curve{
+    margin-left: 50px;
+}
+/* ---------- */
 
 /* Footer */
 footer{
     background-color: aqua;
 }
-/* ------------ */
+/* ---------- */
 
 
