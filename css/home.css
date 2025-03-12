@@ -68,16 +68,19 @@ nav {
 
 /* Header > Nav menu > shop submenu */
 .shop-menu{
-    cursor: default;
+    padding: 50px;
     position: absolute;
     top: calc(var(--height-header) + 50px);
     left: 0px;
     background-color: transparent; 
     visibility: hidden;
     opacity: 0;
-    padding: 30px;
-    background-color: red;
+    background-color: var(--color-primary-bg); ;
+    cursor: default;
     transition: all 0.5s;
+}
+.nav-list__item:hover .menu__link{
+    color: var(--color-link-hover);
 }
 .nav-list__item:hover .shop-menu {
     top: var(--height-header);
@@ -85,10 +88,81 @@ nav {
     opacity: 1;
     transition: all 0.5s;
 }
+.shop-menu__list{
+    display: inline-block;
+}
 .shop-submenu__item{
     padding: 0px 20px;
     list-style: none;
     display: inline-block;
+    vertical-align: top;
+}
+.shop-menu-image{
+    vertical-align: top;
+    height: 440px;
+    margin-left: 70px;
+    display: inline-block;
+}
+.deal-of-month{
+    width: 55%;
+    height: 150px;
+    cursor: text;
+    position: absolute;
+    top: 70%;
+    padding: 10px;
+    border: var(--border-main-stroke) ;
+    line-height: normal;
+}
+.deal-of-month--vertical-middle{
+    vertical-align: middle;
+}
+.deal-of-month ::selection{
+    background-color: var( --color-bg-selected-text);
+    color: var(--color-selected-text);
+}
+.deal-of-month__details{
+    display: inline-block;
+    width: 45%;
+}
+.deal-of-month__title{
+    margin: 10px 0px;
+}
+.deal-of-month__text{
+    font-size: 13px;
+    color: var(--color-secondery-text);
+}
+.deal-of-month__link{
+    font-size: 13px;
+    color: var(--color-primary-link);
+    display: inline-block;
+    padding-top: 10px;
+    text-decoration: none;
+}
+.deal-of-month__timer{
+    display: inline-block;
+}
+.deal-timer{
+    color: var(--color-primary-text);
+    font-size: 0.8em;
+    text-align: center;
+}
+.deal-timer__days ,
+.deal-timer__hours,
+.deal-timer__minutes,
+.deal-timer__seconds{
+    display: inline-block;
+    font-family: var(--font-family-title);
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+.deal-timer__number{
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 60px;
+    height: 60px;
+    background-color:var(--color-secondery-bg);
 }
 /* ---------- */
 

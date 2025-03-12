@@ -2,12 +2,14 @@
 .menu__link{
     text-decoration: none;
     user-select: none;
+    font-family: var(--font-family-title);
+    font-size: 1em;
     color: var(--color-primary-text);
-    transition: color 0.7s;
+    transition: color  var(--transition-delay-hover-link);
 }
 .menu__link:hover {
-    color: var(--color-links-hover);
-    transition: color 0.7s;
+    color: var(--color-link-hover);
+    transition: color  var(--transition-delay-hover-link);
 }
 /* ---------- */
 
@@ -18,11 +20,26 @@
 .sub-menu__item{
     list-style: none;
     padding : 5px 0px;
+    font-family: var(--font-family-base);
     line-height: normal;
+    color:var(--color-primary-link);
+    cursor: pointer;
+    transition: color var(--transition-delay-hover-link);
 
 }
+.sub-menu__item:hover{
+    color: var(--color-link-hover);
+    transition: color var(--transition-delay-hover-link);
+    text-decoration: none;
+}
 .sub-menu__item--head{
+    color: var(--color-primary-text);
+    padding-bottom: 10px !important ;
     font-weight: bold;
     font-size: 1.1em;
+}
+
+.sub-menu:hover .sub-menu__item--head{
+    color: red;
 }
 /* ---------- */

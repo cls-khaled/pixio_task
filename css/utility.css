@@ -13,12 +13,18 @@
 
     --border-main-stroke : 1px solid  rgba(0, 0, 0, 0.1);
 
-    /* --color-primary : red;
-    --color-secondry: red; */
     --color-primary-text:black;
-    /* --color-secondery-text:red; */
-    --color-links-hover: #CC0D39;
+    --color-secondery-text:#5e626f;
+    --color-primary-link:#5e626f;
+    --color-link-hover: #CC0D39;
+    --color-primary-bg: white; 
+    --color-secondery-bg: #eee;
+    --color-bg-selected-text: #CC0D39;
+    --color-selected-text: white;
+    --transition-delay-hover-menu: 0.3s;
+    --transition-delay-hover-link: 0.7s;
     
-
+	--font-family-title: Lufga, sans-serif;
+	--font-family-base: DM Sans, sans-serif;
 }
 
