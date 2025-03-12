@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixo Task</title>
+    <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/home.css">
 </head>
 
@@ -13,49 +14,132 @@
     <header>
         <nav>
             <!-- nav left side -->
-            <div class="nav-left-side">
+            <div class="nav__left-side">
                 <!-- site logo -->
-                <img class="site-logo" src="/assets/images/logo_icon.svg" alt="">
+                <div class="site-logo">
+                    <img  class="site-logo-image" src="/assets/images/logo_icon.svg" alt="">
+                </div>
                 <!-- / site logo -->
 
-                <!-- nav links -->
-                <div class="nav-links">
-                    <div>
-                        <a href="#">Home</a>
+                <!-- nav list-->
+                <ul class ="nav-list">
+                    <!-- nav -> home -->
+                    <li class="nav-list__item">
+                        <span class="menu__link" href="#">Home</span>
                         <img src="/assets/images/gray_star_icon.svg" alt="">
-                    </div>
-                    <div>
-                        <a href="#">Shop</a>
+                    </li>
+                    <!-- / nav -> home -->
+
+                    <!-- nav -> shop -->
+                    <li class="nav-list__item">
+                        <span class="menu__link" href="#">Shop</span>
                         <img src="/assets/images/gray_star_icon.svg" alt="">
-                    </div>
-                    <div>
-                        <a href="#">Blog</a>
+
+                        <!-- shop menu -->
+                        <div class="shop-menu">
+                            <!-- shop submenus-->
+                            <ul class="shop-menu__list">
+                                <!-- shop structure submeneu  -->
+                                <li class="shop-submenu__item">
+                                    <!-- shop structure list -->
+                                    <ul class="sub-menu">
+                                        <li class ="sub-menu__item sub-menu__item--head">Shop Structure</li>
+                                        <li class="sub-menu__item">Shop Standard</li>
+                                        <li class="sub-menu__item">Shop List</li>
+                                        <li class="sub-menu__item">Shop With Category</li>
+                                        <li class="sub-menu__item">Shop Filters Top Bar</li>
+                                        <li class="sub-menu__item">Shop Sidebar</li>
+                                        <li class="sub-menu__item">Shop style1</li>
+                                        <li class="sub-menu__item">Shop style2</li>
+                                    </ul>
+                                    <!-- / shop structure list -->
+                                </li>
+                                <!-- / shop structure submeneu  -->
+
+                                <!-- product structure submeneu  -->
+                                <li class="shop-submenu__item">
+                                    <ul class="sub-menu">
+                                       <li class="sub-menu__item sub-menu__item--head">Product Structure</li> 
+                                       <li class="sub-menu__item">Default</li> 
+                                       <li class="sub-menu__item">Thumbnail</li> 
+                                       <li class="sub-menu__item">Grid Media</li> 
+                                       <li class="sub-menu__item">Carousel</li> 
+                                       <li class="sub-menu__item">Full width</li> 
+                                    </ul>
+                                </li>
+                                <!-- / product structure submeneu  -->
+                                
+                                <!-- product Pages submeneu  -->
+                                <li class="shop-submenu__item">
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item sub-menu__item--head">Shop Pages</li> 
+                                        <li class="sub-menu__item">Whish list</li>
+                                        <li class="sub-menu__item">Cart</li>
+                                        <li class="sub-menu__item">Checkout</li>
+                                        <li class="sub-menu__item">Compare</li>
+                                        <li class="sub-menu__item">Order Traking</li>
+                                        <li class="sub-menu__item">Login</li>
+                                        <li class="sub-menu__item">Registeration</li>
+                                        <li class="sub-menu__item">Forget Password</li>
+                                    </ul>
+                                </li>
+                                <!-- / product Pages submeneu  -->
+                            </ul>
+                            <!-- / shop submenus-->
+
+                            <!-- shop girl image -->
+                            <div class="shop-sub-menu-image">
+                                <img src="./assets/images/banner_girl_1.png" alt="">
+                            </div>
+                            <!-- / shop girl image -->
+                        </div>
+                        <!-- / shop menu -->
+                    </li>
+                    <!-- / nav -> shop -->
+
+                    <!--  nav -> blog -->
+                    <li class="nav-list__item">
+                        <span class="menu__link" href="#">Blog</span>
                         <img src="/assets/images/gray_star_icon.svg" alt="">
-                    </div>
-                    <div>
-                        <a href="#">Post Layout</a>
+                    </li>
+                    <!--  / nav -> blog -->
+
+                    <!--  nav -> post layout -->
+                    <li class="nav-list__item">
+                        <span class="menu__link" href="#">Post Layout</span>
                         <img src="/assets/images/gray_star_icon.svg" alt="">
-                    </div>
-                    <div>
-                        <a href="#">Portfolio</a>
+                    </li>
+                    <!--  / nav -> post layout -->
+
+
+                    <!--  nav -> portfolio-->
+                    <li class="nav-list__item">
+                        <span class="menu__link" href="#">Portfolio</span>
                         <img src="/assets/images/gray_star_icon.svg" alt="">
-                    </div>
-                    <div>
-                        <a href="#">Pages</a>
+                    </li>
+                    <!--  / nav -> portfolio-->
+
+                    <!--  nav -> pages -->
+                    <li class="nav-list__item">
+                        <span class="menu__link" href="#">Pages</sapn>
                         <img src="/assets/images/gray_star_icon.svg" alt="">
-                    </div>
-                    <div>
-                        <a href="#">My Account</a>
+                    </li>
+                    <!--  / nav -> pages -->
+
+                    <!--  nav -> my account -->
+                    <li class="nav-list__item">
+                        <span class="menu__link" href="#">My Account</span>
                         <img src="/assets/images/gray_star_icon.svg" alt="">
-                    </div>
-                </div>
-                <!-- / nav links -->
+                    </li>
+                    <!--  / nav -> my account -->
+                </ul>
+                <!-- / nav list -->
             </div> 
             <!-- / nav left side -->
 
             <!-- nav right side -->
-            <div class="nav-right-side">
-                <span>Login / Register</span>
+            <div class="nav__right-side">
+                <span >Login / Register</span>
                 <img src="/assets/images/search_icon.svg" alt="search icon">
                 <img src="/assets/images/wish_icon.svg" alt="wish icon">
                 <img src="/assets/images/cart_icon.svg" alt="cart icon">
@@ -63,12 +147,29 @@
             </div>
             <!-- / nav right side -->
         </nav>
+
     </header>
 
     <main>
         <!-- Collections sections -->
         <section class="collections">
-            <p>Collection Section</p>
+            <div class="collection-details">
+                <div class="collection-title">
+                    <h1>Beautiful Woman <br> Purple Sweater</h1>
+                </div>
+                <div class="collection-prive">
+                    <p>Price</p>
+                    <p>$30.00</p>
+                </div>
+                <div class="collection-buttons">
+                    <div class=""></div>
+                </div>
+                <div class="collection-video-button"></div>
+                <div class="collection-season"></div>
+            </div>
+            <div class="collection-images">
+
+            </div>
         </section> 
         <!-- / Collection-->
 

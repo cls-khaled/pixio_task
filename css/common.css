@@ -1,0 +1,28 @@
+/* main links */
+.menu__link{
+    text-decoration: none;
+    user-select: none;
+    color: var(--color-primary-text);
+    transition: color 0.7s;
+}
+.menu__link:hover {
+    color: var(--color-links-hover);
+    transition: color 0.7s;
+}
+/* ---------- */
+
+/* submenu */
+.sub-menu{
+    vertical-align: top;
+}
+.sub-menu__item{
+    list-style: none;
+    padding : 5px 0px;
+    line-height: normal;
+
+}
+.sub-menu__item--head{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+/* ---------- */

@@ -1,73 +1,101 @@
-/* Ordring convention : 
-*   1. positioning
-*   2. box-model
-*   3. typography
-*   4. visual
-*   5. animation
-*   6. miscellanous
-*/
 @import url("./utility.css");
 
 /* Header  */
 header{
+    position: fixed;
     width: 100% ;
-    min-width: 1300px;
+    min-width: var(--min-width-custom);
     height: var(--height-header);
+    background-color: white;
     border-bottom: var(--border-main-stroke);
 }
 /* ---------- */
 
 /* Header > Nav */
 nav {
+    position: relative; 
     width: var(--width-boxed-screen);
     height: var(--height-header);
     margin: auto;
 }
-.nav-left-side{
+.nav__left-side{
     float: left;
 }
-.nav-left-side > div{
-    display: inline;
-    height: var(--height-header);
-    line-height: var(--height-header);
-}
+
 .site-logo{
     display: inline-block;
     vertical-align: middle;
 } 
-.nav-links{
-    margin-left: 70px;
+
+.site-logo__img{
+    width: 141px;
+    height: 45px;
+    margin: auto;
 }
-.nav-links > div{
+
+.nav-list{
+    list-style-type: none;
+    margin-left: 50px;
+    width: 745px;
+    height: var(--height-header);
     display: inline-block;
-    padding: 0px 5px;
+    vertical-align: middle;
 }
-.nav-links > div > a {
-    font-size: 1em;
-    color: var(--color-primary-text) ; 
-    user-select: none;
-    text-decoration: none;
+.nav-list__item{
+    padding: 0px 10px;
+    display: inline-block;
+    line-height: var(--height-header);
+    cursor: pointer;
 }
-.nav-links > div > img {
-    width: 12px;
-    height: 12px;
+.nav-list__item span{
+    display: inline-block;
 }
-.nav-right-side{
+.nav__right-side{
     height: var(--height-header);
     float: right;
-    line-height: var(--height-header);
 }
-.nav-right-side :first-child{
+
+.nav__right-side :first-child{
+    margin-right: 10px;
+    line-height: var(--height-header);
     border-bottom: var(--border-main-stroke);
 }
-.nav-right-side > img{
-    margin: auto 5px;
+.nav__right-side > img{
     vertical-align: middle;
+    margin: auto 5px;
+}
+/* ---------- */
+
+/* Header > Nav menu > shop submenu */
+.shop-menu{
+    cursor: default;
+    position: absolute;
+    top: calc(var(--height-header) + 50px);
+    left: 0px;
+    background-color: transparent; 
+    visibility: hidden;
+    opacity: 0;
+    padding: 30px;
+    background-color: red;
+    transition: all 0.5s;
+}
+.nav-list__item:hover .shop-menu {
+    top: var(--height-header);
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.shop-submenu__item{
+    padding: 0px 20px;
+    list-style: none;
+    display: inline-block;
 }
 /* ---------- */
 
 /* Main */
 main{
+    padding-top: var(--height-header);
+    clear: both;
     width: 100%;
 }
 /* ---------- */
@@ -75,6 +103,7 @@ main{
 /* Main > collection section */
 .collections{
     height: 858px;
+    text-align: center;
     background-color:rgba(255, 250, 243, 1);
 }
 /* ---------- */

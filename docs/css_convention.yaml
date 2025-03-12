@@ -1,0 +1,10 @@
+naming : 
+  - "block-element-modifier - BEM"
+  - "hypen-case"
+Ordring : 
+  1. positioning
+  2. box-model
+  3. typography
+  4. visual
+  5. animation
+  6. miscellanous
