@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -188,31 +189,57 @@
             </div>
             <!-- / nav right side -->
         </nav>
-
     </header>
 
     <main>
-        <!-- Collections sections -->
-        <section class="collections">
+        <!-- Collection sections -->
+        <section class="collection">
+            <!-- collection details -->
             <div class="collection-details">
-                <div class="collection-title">
-                    <h1>Beautiful Woman <br> Purple Sweater</h1>
-                </div>
-                <div class="collection-prive">
-                    <p>Price</p>
-                    <p>$30.00</p>
-                </div>
-                <div class="collection-buttons">
-                    <div class=""></div>
-                </div>
-                <div class="collection-video-button"></div>
-                <div class="collection-season"></div>
-            </div>
-            <div class="collection-images">
+                <!-- collection box -->
+                <div class="collection-box">
+                    <!-- collection box title -->
+                    <div class="collection-box__title">
+                        <h1>Beautiful Woman Purple Sweater</h1>
+                    </div>
+                    <!-- / collection box title -->
 
+                    <div class="collection-box__price-text">Price</div>
+                    <div class="collection-box__price-value">$30.00</div>
+
+                    <!-- collection box buttons -->
+                    <div class="collection-buttons">
+                        <div class="collection-buttons__left-btn">ADD TO CART</div>
+                        <div class="collection-buttons__right-btn">VIEW DETAIL</div>
+                    </div>
+                    <!-- / collection box buttons -->
+
+                    <!-- collection season -->
+                    <div class="collection-season">
+                        <img class="collection-season__image" src="./assets/images/big_asterisk.svg" alt="">
+                        <div class="collection-season__text">
+                            <span>Summer Collection</span>
+                            TRENDY AND CLASSIC<br>FOR THE NEW SEASON
+                        </div>
+                    </div>
+                    <!-- / collection season -->
+                    <div class="collection-video-button"></div>
+                </div>
+                <!-- / collection box -->
+                <div class="collection-play">
+                    <i class="fa-solid fa-play collection__play-btn"></i>
+                    <span clss= "collection__play-text">Explore More Collection</span>
+                </div>
             </div>
+            <!-- / collection details -->
+
+            <!-- collection images -->
+            <div class="collection-images">
+                COLLECTION IMAGES
+            </div>
+            <!-- / collection images -->
         </section> 
-        <!-- / Collection-->
+        <!-- / Collection sections-->
 
         <!-- Featured Categories -->
         <section class="featured-categories">

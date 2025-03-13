@@ -1,0 +1,25 @@
+home.css : 
+  - line 187
+  - Q : each inline-block element has 50% width, but both element together fill over 100% , 
+        there's no padding or margin , also i set box-sizing to border-box , same problem ?
+
+home.css : 
+  - line : *
+  - Q : is there's a standerd model or rules to organize css and prevent coupling , 
+        something like SOLID prenciples ? , i don't mean name convetions like BEM !
+
+home.css : 
+  - lines : 70 , 85 
+  - Q : if i'm hovering over menu element and the sub menu is appeared ,
+      then if hovering outside it then back to hover it again before the transition time is done ,
+      it will show it again !
+      this is NOT same behaviour in original website.
+
+css : 
+  - Q : how to deal with mess of z-index values; 
+
+
+
+
+         
+

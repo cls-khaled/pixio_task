@@ -21,10 +21,22 @@
     --color-secondery-bg: #eee;
     --color-bg-selected-text: #CC0D39;
     --color-selected-text: white;
+    --color-button-border: black; 
+    --color-button-bg-light: white; 
+    --color-button-bg-dark: black; 
+    --color-button-text-light: black; 
+    --color-button-text-dark: white; 
+    --color-button-play: #444444; 
+
     --transition-delay-hover-menu: 0.3s;
     --transition-delay-hover-link: 0.7s;
     
 	--font-family-title: Lufga, sans-serif;
 	--font-family-base: DM Sans, sans-serif;
+
+    --z-index-min : 1;
+    --z-index-max : 9999;
+    --z-index-header : 1000;
+    --z-index-collection: 2; 
 }
 

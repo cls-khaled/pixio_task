@@ -3,6 +3,7 @@
 /* Header  */
 header{
     position: fixed;
+    z-index: var(--z-index-header);  
     width: 100% ;
     min-width: var(--min-width-custom);
     height: var(--height-header);
@@ -175,11 +176,116 @@ main{
 /* ---------- */
 
 /* Main > collection section */
-.collections{
-    height: 858px;
-    text-align: center;
+.collection{
+    display: flex;
+    justify-content: center;
+    height: 680px;
+    min-width: var(--min-width-custom);
     background-color:rgba(255, 250, 243, 1);
 }
+.collection-details,
+.collection-images{
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    border: unset;
+    vertical-align: top;
+}
+.collection-details{ 
+    position:relative ;
+}
+.collection-images{
+    background-color: gray;
+}
+/* >>> */
+.collection-box{
+    padding-left: 20px;
+    position: relative;
+    font-family: var(--font-family-title);
+    width: 90%;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50% );
+    z-index: var(--z-index-collection);
+}
+.collection-box__title{
+    width: fit-content;
+    font-size: 2em;
+    line-height: 1.4;
+}
+.collection-box__price-text{
+    margin: 30px 0px 5px;
+    font-size: 0.9em;
+}
+.collection-box__price-value{
+    font-weight: 600;
+    font-size: 2.3em;
+}
+.collection-buttons{
+    margin-top:20px ;
+    width: fit-content;
+}
+.collection-buttons__left-btn,
+.collection-buttons__right-btn{
+   display: inline-block;
+   width: 169px; 
+   height: 45px;
+   border-radius: 10px ;
+   background-color: yellow;
+   border: 1px solid var(--color-button-border);
+   text-align: center;
+   line-height: 45px;
+   font-size: 1em;
+}
+.collection-buttons__left-btn{
+    margin-right: 2px;
+    color: var(--color-button-text-dark);
+    background-color: var(--color-button-bg-dark);
+}
+.collection-buttons__right-btn{
+    color: var(--color-button-text-light);
+    background-color: var(--color-button-bg-light);
+    margin-left: 2px;
+}
+/* >>> */
+.collection-season{
+    margin-top:100px;
+    /* background-color: red; */
+    width: 100%;
+}
+.collection-season__image,
+.collection-season__text{
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+.collection-season__image{
+    width: 90px;
+    width: 90px;
+}
+.collection-season__text{
+    /* background-color: rebeccapurple; */
+    height: 90px;
+    font-size: 1.3em;
+}
+.collection-season__text > span {
+    display: block;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+/* >>> */
+.collection-play{
+    position: absolute;
+    right: 20px;
+    bottom: 25% ;
+    width: 100px;
+    height: 100px;
+    color: var(--color-button-play) ;
+    background-color: red;
+}
+/* .collection__play-text{ } */
+/* .collection__play-btn{ } */
+
 /* ---------- */
 
 /* Main > featured categories*/

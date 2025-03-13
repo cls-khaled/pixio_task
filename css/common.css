@@ -1,7 +1,7 @@
 /* mouse circle */
 .mouse-circle{
     position: fixed;
-    z-index: 1000;
+    z-index: var(--z-index-max);
     top: -20px; 
     left: -20px;
     width: 40px;
