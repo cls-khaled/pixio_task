@@ -2,6 +2,7 @@ home.css :
   - line 187
   - Q : each inline-block element has 50% width, but both element together fill over 100% , 
         there's no padding or margin , also i set box-sizing to border-box , same problem ?
+  - A : use float !!
 
 home.css : 
   - line : *
