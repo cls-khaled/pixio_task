@@ -236,6 +236,7 @@ main{
    text-align: center;
    line-height: 45px;
    font-size: 1em;
+   cursor: pointer;
 }
 .collection-buttons__left-btn{
     margin-right: 2px;
@@ -246,6 +247,12 @@ main{
     color: var(--color-button-text-light);
     background-color: var(--color-button-bg-light);
     margin-left: 2px;
+    transition: color var(--transition-delay-hover-link);
+}
+.collection-buttons__right-btn:hover{
+    color: var(--color-button-text-dark);
+    background-color: var(--color-button-bg-dark);
+    transition: color var(--transition-delay-hover-link);
 }
 /* >>> */
 .collection-season{
@@ -285,7 +292,17 @@ main{
 }
 /* .collection__play-text{ } */
 /* .collection__play-btn{ } */
-
+/* >>> */
+.collection-small-star{
+    position: absolute;
+    top: 25px;
+    right: 5%;
+    width: 50px;
+    animation-name: rotation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear ;
+}
 /* ---------- */
 
 /* Main > featured categories*/
