@@ -479,6 +479,16 @@ main{
     background-color: #880f0f;
     height: 25%;
 }
+/* >>> */
+.featured-more-collection{
+    position: absolute;
+    top: 50%;
+    right : 33%;
+    width: 200px;
+    height: 200px;
+    transform: translate(50% , -50%);
+    background-color: #062f3c;
+}
 /* ---------- */
 
 /* Footer */
