@@ -27,6 +27,8 @@
     --color-button-text-light: black; 
     --color-button-text-dark: white; 
     --color-button-play: #444444; 
+    --color-arrow-circle-btn: black; 
+    --color-arrow-circle-btn-hover:#feeb9d; 
 
     --transition-delay-hover-menu: 0.3s;
     --transition-delay-hover-link: 0.7s;
@@ -37,7 +39,9 @@
     --z-index-min : 1;
     --z-index-max : 9999;
     --z-index-header : 1000;
+    --z-index-collection-play-btn : 3;
     --z-index-collection: 2; 
+    --z-index-featured-categories-curve: 2; 
 }
 
 /* key frames */
