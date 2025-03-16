@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px ;
+    box-sizing: border-box;
+}
+
+:root{
+    --height-header: 81px;
+    --width-boxed-screen: 90%;
+    --min-width-custom: 1380px;
+    --min-width-hd: 1280px;
+    --min-width-fhd: 1920px;
+
+    --border-main-stroke : 1px solid  rgba(0, 0, 0, 0.1);
+
+    --color-primary-text:black;
+    --color-primary-text-dark:white;
+    --color-secondery-text:#5e626f;
+    --color-primary-link:#5e626f;
+    --color-link-hover: #CC0D39;
+    --color-primary-bg: white; 
+    --color-secondery-bg: #eee;
+    --color-bg-selected-text: #CC0D39;
+    --color-selected-text: white;
+    --color-button-border: black; 
+    --color-button-bg-light: white; 
+    --color-button-bg-dark: black; 
+    --color-button-text-light: black; 
+    --color-button-text-dark: white; 
+    --color-button-play: #444444; 
+    --color-arrow-circle-btn: black; 
+    --color-arrow-circle-btn-hover:#feeb9d; 
+
+    --transition-delay-hover-menu: 0.3s;
+    --transition-delay-hover-link: 0.7s;
+    
+	--font-family-title: Lufga, sans-serif;
+	--font-family-base: DM Sans, sans-serif;
+
+    --z-index-min : 1;
+    --z-index-max : 9999;
+    --z-index-header : 1000;
+    --z-index-collection-play-btn : 3;
+    --z-index-collection: 2; 
+    --z-index-featured-categories-curve: 2; 
+}
+
+/* key frames */
+@keyframes rotation {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}

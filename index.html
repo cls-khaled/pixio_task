@@ -1,0 +1,369 @@
+<!-- Git Repository : https://github.com/cls-khaled/pixio_task  -->
+<!-- Original design : https://pixio-react.vercel.app/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixo Task</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Roboto:wght@100;300;400;500;700;900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- mouse circle -->
+    <div id="mouse-circle" class="mouse-circle">
+        <div class="mouse-circle__solid-center"></div>
+    </div> <!-- /mouse circle -->
+    <header>
+        <nav>
+            <!-- nav left side -->
+            <div class="nav__left-side">
+                <!-- site logo -->
+                <div class="site-logo">
+                    <img class="site-logo-image" src="/assets/images/logo_icon.svg" alt="">
+                </div> <!-- / site logo -->
+
+                <!-- nav list-->
+                <ul class="nav-list">
+                    <!-- nav -> home -->
+                    <li class="nav-list__item">
+                        <span class="menu__link" href="#">Home</span>
+                        <img src="/assets/images/gray_star_icon.svg" alt="">
+                    </li> <!-- / nav -> home -->
+
+                    <!-- nav -> shop -->
+                    <li class="nav-list__item">
+                        <span class="menu__link" href="#">Shop</span>
+                        <img src="/assets/images/gray_star_icon.svg" alt="">
+
+                        <!-- shop menu -->
+                        <div class="shop-menu">
+                            <!-- shop submenus-->
+                            <ul class="shop-menu__list">
+                                <!-- shop structure submeneu  -->
+                                <li class="shop-submenu__item">
+                                    <!-- shop structure list -->
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item sub-menu__item--head">Shop Structure</li>
+                                        <li class="sub-menu__item">Shop Standard</li>
+                                        <li class="sub-menu__item">Shop List</li>
+                                        <li class="sub-menu__item">Shop With Category</li>
+                                        <li class="sub-menu__item">Shop Filters Top Bar</li>
+                                        <li class="sub-menu__item">Shop Sidebar</li>
+                                        <li class="sub-menu__item">Shop style1</li>
+                                        <li class="sub-menu__item">Shop style2</li>
+                                    </ul> <!-- / shop structure list -->
+                                </li> <!-- / shop structure submeneu  -->
+
+                                <!-- product structure submeneu  -->
+                                <li class="shop-submenu__item">
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item sub-menu__item--head">Product Structure</li>
+                                        <li class="sub-menu__item">Default</li>
+                                        <li class="sub-menu__item">Thumbnail</li>
+                                        <li class="sub-menu__item">Grid Media</li>
+                                        <li class="sub-menu__item">Carousel</li>
+                                        <li class="sub-menu__item">Full width</li>
+                                    </ul>
+                                </li> <!-- / product structure submeneu  -->
+
+                                <!-- product Pages submeneu  -->
+                                <li class="shop-submenu__item">
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item sub-menu__item--head">Shop Pages</li>
+                                        <li class="sub-menu__item">Whish list</li>
+                                        <li class="sub-menu__item">Cart</li>
+                                        <li class="sub-menu__item">Checkout</li>
+                                        <li class="sub-menu__item">Compare</li>
+                                        <li class="sub-menu__item">Order Traking</li>
+                                        <li class="sub-menu__item">Login</li>
+                                        <li class="sub-menu__item">Registeration</li>
+                                        <li class="sub-menu__item">Forget Password</li>
+                                    </ul>
+                                </li> <!-- / product Pages submeneu  -->
+                            </ul> <!-- / shop submenus-->
+
+                            <!-- shop menu image -->
+                            <img class="shop-menu-image" src="./assets/images/banner_girl_1.png" alt="">
+                            <!-- shop menu image -->
+
+                            <!-- deal of month -->
+                            <div class="deal-of-month">
+                                <!-- deal of month container -->
+                                <div class="deal-of-month__details deal-of-month--vertical-middle">
+                                    <h4 class="deal-of-month__title">Deal of month</h4>
+                                    <p class="deal-of-month__text"> Yes! Send me exclusive offers, personalised, and
+                                        unique gift ideas, tips for shopping on Pixio </p>
+                                    <a class="deal-of-month__link" href="#">View Products</a>
+                                </div> <!-- / deal of month container -->
+
+                                <!-- deal of month timer -->
+                                <div class="deal-of-month__timer deal-of-month--vertical-middle">
+                                    <!-- deal timer -->
+                                    <ul class="deal-timer">
+                                        <li class="deal-timer__days">
+                                            <div class="deal-timer__number">250</div>
+                                            <div>DAYS</div>
+                                        </li>
+                                        <li class="deal-timer__hours">
+                                            <div class="deal-timer__number">12</div>
+                                            <div>HOURS</div>
+                                        </li>
+                                        <li class="deal-timer__minutes">
+                                            <div class="deal-timer__number">44</div>
+                                            <div>MINUTES</div>
+                                        </li>
+                                        <li class="deal-timer__seconds">
+                                            <div id="timer-seconds" class="deal-timer__number">00</div>
+                                            <div>SECONDS</div>
+                                        </li>
+                                    </ul> <!-- /deal timer -->
+                                </div> <!-- deal of month timer -->
+                            </div> <!-- / deal of month -->
+                        </div> <!-- / shop menu -->
+                    </li> <!-- / nav -> shop -->
+
+                    <!--  nav -> blog -->
+                    <li class="nav-list__item">
+                        <span class="menu__link" href="#">Blog</span>
+                        <img src="/assets/images/gray_star_icon.svg" alt="">
+                    </li> <!--  / nav -> blog -->
+
+                    <!--  nav -> post layout -->
+                    <li class="nav-list__item">
+                        <span class="menu__link" href="#">Post Layout</span>
+                        <img src="/assets/images/gray_star_icon.svg" alt="">
+                    </li> <!--  / nav -> post layout -->
+
+
+                    <!--  nav -> portfolio-->
+                    <li class="nav-list__item">
+                        <span class="menu__link" href="#">Portfolio</span>
+                        <img src="/assets/images/gray_star_icon.svg" alt="">
+                    </li> <!--  / nav -> portfolio-->
+
+                    <!--  nav -> pages -->
+                    <li class="nav-list__item">
+                        <span class="menu__link" href="#">Pages</sapn>
+                            <img src="/assets/images/gray_star_icon.svg" alt="">
+                    </li> <!--  / nav -> pages -->
+
+                    <!--  nav -> my account -->
+                    <li class="nav-list__item">
+                        <span class="menu__link" href="#">My Account</span>
+                        <img src="/assets/images/gray_star_icon.svg" alt="">
+                    </li> <!--  / nav -> my account -->
+                </ul> <!-- / nav list -->
+            </div> <!-- / nav left side -->
+
+            <!-- nav right side -->
+            <div class="nav__right-side">
+                <span>Login / Register</span>
+                <img src="/assets/images/search_icon.svg" alt="search icon">
+                <img src="/assets/images/wish_icon.svg" alt="wish icon">
+                <img src="/assets/images/cart_icon.svg" alt="cart icon">
+                <img src="/assets/images/more_icon.svg" alt="more icon">
+            </div> <!-- / nav right side -->
+        </nav>
+    </header>
+
+    <main>
+        <!-- Collection sections -->
+        <section class="collection">
+            <!-- collection details -->
+            <div class="collection-details">
+                <!-- collection box -->
+                <div class="collection-box">
+                    <!-- collection box title -->
+                    <div class="collection-box__title">
+                        <h1>Beautiful Woman Purple Sweater</h1>
+                    </div> <!-- / collection box title -->
+
+                    <div class="collection-box__price-text">Price</div>
+                    <div class="collection-box__price-value">$30.00</div>
+
+                    <!-- collection box buttons -->
+                    <div class="collection-buttons">
+                        <div class="collection-buttons__left-btn">ADD TO CART</div>
+                        <div class="collection-buttons__right-btn">VIEW DETAIL</div>
+                    </div> <!-- / collection box buttons -->
+
+                    <!-- collection season -->
+                    <div class="collection-season">
+                        <img class="collection-season__image" src="./assets/images/big_asterisk.svg" alt="">
+                        <div class="collection-season__text">
+                            <span>Summer Collection</span>
+                            TRENDY AND CLASSIC<br>FOR THE NEW SEASON
+                        </div>
+                    </div>
+                    <!-- / collection season -->
+                    <div class="collection-video-button"></div>
+                </div> <!-- / collection box -->
+
+                <!-- collection explore box-->
+                <div class="collection-explore-box">
+                    <!-- collection play btn -->
+                    <div class="collection-play">
+                        <p id="collection-play-text" class="collection__play-text">EXPLORE MORE COLLECTION</p>
+                    </div> <!-- / collection play btn -->
+
+                    <i class="fa-solid fa-play collection__play-btn"></i>
+                </div> <!-- /collection explore box-->
+
+                <img class="collection-small-star" src="assets/images/yellow_star.svg" alt="">
+            </div> <!-- / collection details -->
+
+            <!-- collection images part-->
+            <div class="collection-images-part">
+                <!-- collection images box -->
+                <div class="collection-images-box">
+                    <!-- left image -->
+                    <div class="collection-images-part__left-img">
+                        <img src="./assets/images/banner_girl_1.png" alt="">
+                        <img src="./assets/images/image_right_curve.svg" alt="">
+                    </div> <!-- / left image -->
+
+                    <!-- right image -->
+                    <div class="collection-images-part__right-img">
+                        <img src="./assets/images/banner_girl_2.png" alt="">
+                    </div> <!-- / right image -->
+
+                    <!-- circle arrow button box -->
+                    <div class="arrow-btn-box">
+                        <i class="fa-solid fa-arrow-right arrow-btn-box__icon"></i>
+                    </div> <!-- circle arrow button box -->
+                </div> <!-- collection images box -->
+                <img class="collection-images-part__star" src="assets/images/black_star.svg" alt="">
+
+            </div> <!-- / collection images part-->
+        </section> <!-- / Collection sections-->
+
+        <!-- Featured Categories -->
+        <section class="featured-categories">
+            <img class="white-curve" src="/assets/images/white_alpha_curve.svg" alt="">
+            <!-- featured categories left -->
+
+            <div class="featured-categories-left">
+                <!-- featured categories box -->
+                <div class="featured-categories-box">
+
+                    <!-- item block -->
+                    <div class="categories-item">
+                        <!-- item image -->
+                        <div class="categories-item__image">
+                            <img src="./assets/images/short.png" alt="">
+                        </div> <!-- / item image -->
+                        <!-- item button -->
+                        <div class="categories-item__btn">
+                            <div>Shorts</div>
+                        </div> <!-- item button -->
+                    </div> <!-- item block-->
+
+                    <!-- item block -->
+                    <div class="categories-item">
+                        <!-- item image -->
+                        <div class="categories-item__image">
+                            <img src="./assets/images/shirts.png" alt="">
+                        </div> <!-- / item image -->
+                        <!-- item button -->
+                        <div class="categories-item__btn">
+                            <div>Shirt</div>
+                        </div> <!-- / item button -->
+                    </div> <!-- item block-->
+
+                    <!-- item block -->
+                    <div class="categories-item">
+                        <!-- item image -->
+                        <div class="categories-item__image">
+                            <img src="./assets/images/jeans.png" alt="">
+                        </div> <!-- / item image -->
+                        <!-- item button -->
+                        <div class="categories-item__btn">
+                            <div>Jeans</div>
+                        </div> <!-- / item button -->
+                    </div> <!-- item block-->
+
+                    <!-- item block -->
+                    <div class="categories-item">
+                        <!-- item image -->
+                        <div class="categories-item__image">
+                            <img src="./assets/images/t_shirt.png" alt="">
+                        </div>
+                        <!-- / item image -->
+                        <!-- item button -->
+                        <div class="categories-item__btn">
+                            <div>Shirts</div>
+                        </div> <!-- / item button -->
+                    </div> <!-- item block-->
+
+                </div> <!-- / featured categories box -->
+            </div> <!-- / featured categories left -->
+
+            <!-- featured categories right-->
+            <div class="featured-categories-right">
+                <!-- featured text -->
+                <div class="featured-text">
+                    Featured Categories
+                    <span>Discover the most trending products in Pixio.</span>
+                </div> <!-- / featured text -->
+                <!-- featured buttons -->
+                <div class="featured-buttons">
+                    <i class="fa-solid fa-arrow-left-long featured-buttons__left-arrow"></i>
+                    <i class="fa-solid fa-arrow-right-long featured-buttons__right-arrow"></i>
+                </div> <!-- / featured buttons-->
+            </div> <!-- / featured categories right-->
+
+            <!-- featured more collection -->
+            <div class = "featured-more-collection">
+                <!-- text container -->
+                <div class="featured-more-collection__text-container">
+                    <p id="featured-collection-text" class="featured-more-collection__text">MORE COLLECTION EXPLORE</p>
+                </div> <!-- / text container -->
+                <i class="fa-solid fa-arrow-left-long featured-more-collection__arrow"></i>
+            </div> <!-- / featured more collection -->
+        </section> <!-- / Featured Categories -->
+    
+        <!-- section two -->
+        <section class = "section-two">
+
+            <!-- section two box -->
+            <div class="section-two__box"> </div> <!-- / section two box -->
+
+            <!-- section two marquee box -->
+            <div class="section-two__marquee-box">
+                <!-- section two marquee item -->
+                <marquee class="section-two__marquee-item" > 
+                    <img src="./assets/images/gray_star_icon.svg" alt="">
+                    <span>JEANS</span>
+                    <img src="./assets/images/gray_star_icon.svg" alt="">
+                    <span>SHIRTS</span>
+                    <img src="./assets/images/gray_star_icon.svg" alt="">
+                    <span>SHORTS</span>
+                    <img src="./assets/images/gray_star_icon.svg" alt="">
+                    <span>T-SHIRT</span>
+                    <img src="./assets/images/gray_star_icon.svg" alt="">
+                    <span>BLAZER</span>
+                    <img src="./assets/images/gray_star_icon.svg" alt="">
+                    <span>JACKET</span>
+                    <img src="./assets/images/gray_star_icon.svg" alt="">
+                </marquee> <!-- section two marquee box -->
+            </div> <!-- / section two box -->
+        </section> <!-- / section two -->
+
+        <!-- section next-->
+        <section class = "next-section"> </section> <!-- / section two -->
+    </main>
+
+    <footer>
+        footer section
+    </footer>
+    <script src="./js/home.js" type="text/javascript"></script>
+</body>
+
+</html>
