@@ -236,7 +236,6 @@ main{
    width: 169px; 
    height: 45px;
    border-radius: 10px ;
-   background-color: yellow;
    border: 1px solid var(--color-button-border);
    text-align: center;
    line-height: 45px;
@@ -249,15 +248,7 @@ main{
     background-color: var(--color-button-bg-dark);
 }
 .collection-buttons__right-btn{
-    color: var(--color-button-text-light);
-    background-color: var(--color-button-bg-light);
     margin-left: 2px;
-    transition: color var(--transition-delay-hover-link);
-}
-.collection-buttons__right-btn:hover{
-    color: var(--color-button-text-dark);
-    background-color: var(--color-button-bg-dark);
-    transition: color var(--transition-delay-hover-link);
 }
 /* >>> */
 .collection-season{
@@ -479,8 +470,12 @@ main{
     border-radius:50px;
     border: 1px solid black;
     background-color: white;
+    transition: color var(--transition-delay-hover-link);
 }
-
+.categories-item__btn :hover{
+    color: var(--color-link-hover);
+    transition: color var(--transition-delay-hover-link);
+}
 /* >>> */
 .featured-text,
 .featured-buttons{
@@ -576,17 +571,97 @@ main{
     position: relative;
     display: flex;
     justify-content: center;
-    height: 650px;
+    margin-top: 50px;
+    height: 750px;
     width: 100% ;
     min-width: var(--min-width-custom);
 }
 .section-two__box{
-    background-color: aqua;
+    display: flex;
     padding: 20px;
     width: 1200px;
     height: 520px
 }
-/* >> */
+
+/* >>> */
+.section-two__left,
+.section-two__right{
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+/* .section-two__left{ } */
+.section-two__right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+/* >>> */
+.section-two-left__image{
+    background-color: blue;
+    height: 100%;
+}
+.section-two-left__btn{
+    position: absolute;  
+    bottom: 30px;
+    left: 35px;
+    width: 254px;
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.2em; 
+    font-family: var(--font-family-title);
+}
+/* >>> */
+.section-two-right__top,
+.section-two-right__bot{
+    width: 100%;
+    height: 50%;
+}
+.section-two-right__top{
+    padding: 20px;
+}
+.section-two-right__top > *{
+    width: 80%;
+}
+.section-two-right__top > h3{
+    line-height: 1.2;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: var(--font-family-title);
+}
+.section-two-right__top > p{
+    margin-top: 20px;
+    font-size: 1.3;
+    text-align: justify;
+}
+.section-two-right__circle-btn{
+    position: relative; 
+    top: -78%;
+    right: -88%;
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+.section-two-right__circle-btn > i{ /*arrow icon*/
+    position:absolute ;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    font-weight: 600;
+    transform: translate(-50% , -50%);
+    color: white;
+}
+.section-two-right__bot{
+    background-color: green;    
+}
+/* >>> */
 .section-two__marquee-box{
     position: absolute;
     display: flex;
@@ -605,6 +680,18 @@ main{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
+.section-two__marquee-item > *{
+    vertical-align: middle;
+}
+.section-two__marquee-item > span{
+    font-size: 50px;
+    letter-spacing: 12px;
+    font-family: var(--font-family-title);
+    margin: 0px 20px;
+}
+.section-two__marquee-item > img{
+    width: 50px;
+}
 /* ---------- */
 
 /* Main > next section*/
@@ -615,7 +702,6 @@ main{
     min-width: var(--min-width-custom);
 }
 /* ---------- */
->>>>>>> be86154448f6002d7fb77a3d83e2185463fa3957
 /* Footer */
 footer{
     background-color: aqua;
