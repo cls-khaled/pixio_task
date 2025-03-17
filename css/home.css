@@ -619,6 +619,7 @@ main{
 /* >>> */
 .section-two-right__top,
 .section-two-right__bot{
+    position:relative; 
     width: 100%;
     height: 50%;
 }
@@ -659,7 +660,68 @@ main{
     color: white;
 }
 .section-two-right__bot{
-    background-color: green;    
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.section-two-right__bot-img1,
+.section-two-right__bot-img2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.section-two-right__bot-img1 > img,
+.section-two-right__bot-img2 > img{
+    height: 100%;
+    transition: all 0.5s;
+}
+.section-two-right__bot-img1:hover img,
+.section-two-right__bot-img2:hover img{
+    overflow: hidden;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.section-two-right__bot-img1 > div, 
+.section-two-right__bot-img2 > div{ /*buttons*/
+    position: absolute; 
+    bottom: 10%;
+    left: 10%;
+    line-height: 40px;
+    padding: 0px 15px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-family: var(--font-family-title);
+}
+/* >>> */
+.section-two__sale-star{
+    position:absolute; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: -30px;
+    right: -50px;
+    width: 100px ;
+    height: 100px ;
+    /* background-color: red; */
+}
+.section-two__sale-star > img{
+    position: relative;
+    width: 90%;
+    animation-name: rotation;
+    animation-duration: 20s ;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.section-two__sale-star > span{
+    position: absolute;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: var(--font-family-base);
 }
 /* >>> */
 .section-two__marquee-box{
