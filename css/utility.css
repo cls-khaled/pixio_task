@@ -43,6 +43,7 @@
     --z-index-collection-play-btn : 3;
     --z-index-collection: 2; 
     --z-index-featured-categories-curve: 2; 
+    --z-index-section3-card-btn: 1000; 
 }
 
 /* key frames */
