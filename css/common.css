@@ -66,4 +66,16 @@
 .sub-menu:hover .sub-menu__item--head{
     color: red;
 }
+
+.hover-btn{
+    color: var(--color-button-text-light);
+    background-color: var(--color-button-bg-light);
+    cursor: pointer;
+    transition: color var(--transition-delay-hover-link);
+}
+.hover-btn:hover{
+    color: var(--color-button-text-dark);
+    background-color: var(--color-button-bg-dark);
+    transition: color var(--transition-delay-hover-link);
+}
 /* ---------- */
