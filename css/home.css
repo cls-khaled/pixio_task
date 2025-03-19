@@ -876,7 +876,7 @@ main {
     align-items: center;
     height: 1200px;
     width: 100%;
-
+    min-width: var(--min-width-custom);
 }
 
 .section-three__container {
@@ -897,6 +897,7 @@ main {
     align-items: start;
     height: 100%;
     width: 50%;
+
     &>h4 {
         margin-left: 50px;
         font-size: 2em;
@@ -937,11 +938,13 @@ main {
             border-radius: 40px;
         }
     }
+
     &>ul :first-child {
         background-color: black;
         color: white;
     }
 }
+
 .section-three__items-container {
     display: flex;
     justify-content: center;
@@ -950,6 +953,7 @@ main {
     width: 100%;
     height: 94%;
 }
+
 /* >>> */
 .section-three-card {
     position: relative;
@@ -958,34 +962,40 @@ main {
     gap: 20px;
     width: 23%;
     height: 45%;
-    transition: all 1s;  
-    &:hover .section-there-card__btn{
+    transition: all 1s;
+
+    &:hover .section-there-card__btn {
         bottom: 0;
     }
 }
-.section-three-card__data-box{
-    width: 100%; 
-    height: 90%; 
+
+.section-three-card__data-box {
+    width: 100%;
+    height: 90%;
     overflow: hidden;
 }
-.section-three-card__image-box{
+
+.section-three-card__image-box {
     position: relative;
     height: 100%;
     border-radius: 20px;
     overflow: hidden;
     width: 100%;
-    & > img{
-       height : 100%;
+
+    &>img {
+        height: 100%;
     }
 }
-.section-there-card__btn{
+
+.section-there-card__btn {
     width: 200px;
     height: 50px;
-    line-height: 48px; /* -2px for each border top/bot (border 4px)*/
+    line-height: 48px;
+    /* -2px for each border top/bot (border 4px)*/
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    z-index :var(--z-index-section3-card-btn); 
+    z-index: var(--z-index-section3-card-btn);
     background-color: black;
     color: white;
     border: 4px solid white;
@@ -993,26 +1003,31 @@ main {
     font-size: 1em;
     text-align: center;
     transition: all var(--transition-delay-hover-link);
-    &:hover{
+
+    &:hover {
         cursor: pointer;
         background-color: #CC0D39;
         transition: all var(--transition-delay-hover-link);
     }
 }
-.section-three-card__details{
+
+.section-three-card__details {
     display: flex;
-    width: 100%; 
-    height: 10%; 
+    width: 100%;
+    height: 10%;
     font-weight: 600;
-    & :first-child{
+
+    & :first-child {
         width: 70%;
     }
-    & :nth-child(2){
+
+    & :nth-child(2) {
         width: 30%;
         text-align: end;
     }
 }
-.section-three-card__offer-flag{
+
+.section-three-card__offer-flag {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -1022,8 +1037,9 @@ main {
     font-size: 0.8em;
     font-weight: 600;
 }
+
 .section-three-card__icon1,
-.section-three-card__icon2{
+.section-three-card__icon2 {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -1031,20 +1047,81 @@ main {
     right: 5%;
     width: 50px;
     height: 50px;
-    background-color: rgba(0, 0, 0 , 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     cursor: pointer;
-    & i{/* icon */
+
+    & i {
+        /* icon */
         font-size: 1.2em;
         color: white;
 
     }
 }
-.section-three-card__icon1{
+
+.section-three-card__icon1 {
     top: 5%;
 }
-.section-three-card__icon2{
+
+.section-three-card__icon2 {
     top: 20%;
+}
+
+/* ---------- */
+
+/* Main > section4 */
+.section4 {
+    height: 500px;
+    width: 100%;
+}
+
+/* >>> */
+.section4__container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.section4-container__left,
+.section4-container__right {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section4-container__left {
+    background-image: url("/assets/images/section_4_image1.png");
+}
+
+.section4-container__right {
+    background-image: url("/assets/images/section_4_image2.png");
+    background-repeat: no-repeat;
+}
+
+/* >>> */
+.section4-left-card {
+    position:absolute; 
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: red;
+    width: 250px;
+    height: 270px;
+}
+/* >>> */
+.section4-right-card {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 270px;
+    background-color: gray;
+
 }
 /* ---------- */
 
